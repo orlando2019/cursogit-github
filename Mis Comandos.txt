@@ -113,3 +113,13 @@ git pull
 ## CON ESTE COMANDO SUBE LOS CAMBIO A GITHUB
 
 git push
+
+## CON ESTE COMANDO CREO UN ARCHIVO PARA QUE GIT LO IGNORE
+
+Creo un archivo .gitignore en la principal de nuestro proyecto y alli agrgamos los archivos o carpetas que no queremos que se carguen en nuestro repositorio 
+Ejemplo:
+*.mp4 = este ingnora todos los archivos con esa extension 
+
+Presentacion/ = Este ignora todos los archivos de esa carpetas
+
+index.js = Este ignora este archivo solamente.
