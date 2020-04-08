@@ -106,3 +106,6 @@ git remote -v
 
 git push --tags
 
+## CON ESTE COMANDO BAJAMOS LOS CAMBIOS HECHOS EN GITHUB
+
+git pull 
