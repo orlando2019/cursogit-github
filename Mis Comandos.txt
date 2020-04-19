@@ -123,3 +123,8 @@ Ejemplo:
 Presentacion/ = Este ignora todos los archivos de esa carpetas
 
 index.js = Este ignora este archivo solamente.
+
+## CON ESTE COMANDOS SUBIMOS NUESTRO REPOSITORIO A GITHUB
+
+git remote add origin https://a clonar
+git push -u origin master
