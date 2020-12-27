@@ -1,4 +1,10 @@
-### ESTOS SON COMANDOS BASICO DE GIT HECHOS POR MI ###
+### ESTOS SON COMANDOS BASICO DE GIT HECHOS POR MI
+
+## CUANDO INSTALAMOS POR PRIMERA VEZ HAY QUE CREAR EL USUARIO Y EL EMAIL CON LOS SIGUIENTES COMANDOS
+
+git config --global user.name “USUARIO”
+git config --global user.email “correo electronico”
+git config --global -e
 
 ## CON ESTE COMANDO INICIAMOS NUESTRO REPOSITORIO O CREA EL REPOSITORIO EN GIT
 
@@ -14,11 +20,11 @@ git add index.html
 
 ## CON ESTE COMANDO AGREGAMOS O GRABAMOS LOS ARCHIVOS NUEVOS A NUESTRO REPOSITORIO PERO CON LA EXTENCION DEL TIPO DE ARCHIVO
 
-git add *.png
+git add \*.png
 
 ## CON ESTE COMANDO QUITAMOD UN ARCHIVO QUE NO QUEREMOS EN NUESTRO REPOSITORIO OJO!! CON LA EXTENSION O NOMBRE DEL ARCHIVO Y SU EXTENSION
 
-git reset *.xml
+git reset \*.xml
 
 ## CON ESTE COMANDO AGREGAMOS O GRABAMOS LOS ARCHIVOS NUEVOS A NUESTRO REPOSITORIO PERO DE UNA CARPETA
 
@@ -39,7 +45,6 @@ git status -s
 ## CON ESTE COMANDO MIRAMOS LOS ULTIMOS CAMBIOS QUE SEAN HAN HECHO DE NUESTRO PROYECTO RESUMIDO Y EN QUE RAMA ESTAMOS TRABAJANDO
 
 git status -s -b
-
 
 ## CON ESTE COMANDO HACEMOS NUESTRAS CAPTURAS DE FOTOS O COMMIT OJO!! HAY QUE PONER UN NOMBRE
 
@@ -65,14 +70,19 @@ git log --oneline
 
 got log --oneline -- decorate --all --graph
 
-## CON ESTE COMANDO CREAMOS LOS ALIAS
+## CON ESTOS COMANDOS CREAMOS LOS ALIAS
+
 # ESTE ES UN ALIAS PARA LOG SIMPLIFICADO
 
 git config --global alias.lg "log --oneline --decorate --all --graph"
 
 # ESTE ES UN ALIAS PARA STATUS SIMPLIFICADO
 
-git config --global alias-st "status -s -b"
+git config --global alias.st "status -s -b"
+
+## CON ESTE COMANDO MIRAMOS CAMBIOS HICIMOS DE LOS ALIAS QUE CREAMOS
+
+git config --global -l
 
 ## CON ESTE COMANDO MIRAMOS CAMBIOS HICIMOS
 
@@ -90,7 +100,7 @@ git reset HEAD README.md
 
 git checkout -- README.md
 
-###   PARA TRABAJAR YA CON GITHUB
+### PARA TRABAJAR YA CON GITHUB
 
 ## CON ESTE COMANDO MIRAMOS SI ESTA REMOTO NUESTRO PROYECTO
 
@@ -116,7 +126,7 @@ git push
 
 Creo un archivo .gitignore en la principal de nuestro proyecto y alli agrgamos los archivos o carpetas que no queremos que se carguen en nuestro repositorio
 Ejemplo:
-*.mp4 = este ingnora todos los archivos con esa extension
+\*.mp4 = este ingnora todos los archivos con esa extension
 
 Presentacion/ = Este ignora todos los archivos de esa carpetas
 
