@@ -2,8 +2,8 @@
 
 ## CUANDO INSTALAMOS POR PRIMERA VEZ HAY QUE CREAR EL USUARIO Y EL EMAIL CON LOS SIGUIENTES COMANDOS
 
-git config --global user.name “USUARIO”
-git config --global user.email “correo electronico”
+git config --global user.name "orlando2019"
+git config --global user.email "orlando1979@outlook.com"
 git config --global -e
 
 ## CON ESTE COMANDO INICIAMOS NUESTRO REPOSITORIO O CREA EL REPOSITORIO EN GIT
@@ -50,7 +50,7 @@ git status -s -b
 
 git commit -m "Nombre del commit o de la foto"
 
-## CON ESTE COMANDO ES COMO SI REALIZAREMOS CONTROL Z DE CUALQUIER MODIFICACION OJO!! SI YA HABIA HECHO UN COMMIT
+## CON ESTE COMANDO ES COMO SI REALIZAREMOS CONTROL Z DE CUALQUIER MODIFICACIÓN OJO!! SI YA HABIA HECHO UN COMMIT
 
 git checkout -- .
 
@@ -68,7 +68,7 @@ git log --oneline
 
 ## ESTE COMANDO MIRAMOS TODOS LOS COMMIT REALIZADOS EN NUESTRO PROYECTO PERO LA INFORMACION ES DECORADA
 
-got log --oneline -- decorate --all --graph
+git log --oneline -- decorate --all --graph
 
 ## CON ESTOS COMANDOS CREAMOS LOS ALIAS
 
@@ -116,7 +116,7 @@ git push --tags
 
 ## CON ESTE COMANDO BAJAMOS LOS CAMBIOS HECHOS EN GITHUB
 
-git pull
+git pull origin
 
 ## CON ESTE COMANDO SUBE LOS CAMBIO A GITHUB
 
@@ -140,3 +140,13 @@ git push -u origin master
 ## CON ESTE COMANDO BORRAMOS O REMOVEMOS EL REPOSITORIO REMOTO EN GITHUB
 
 git remote remove origin
+
+### COMANDO PARA CREAR UNA CLAVE SSH PR
+
+ssh-keygen -t res -b 4096 -C "orlando1979@outlook.com"  
+
+ssh-keygen -t ed25519 -C "orlando1979@outlook.com"
+
+## COMANDO PARA SABER QUE ESTÁN FUNCIONANDO LAS LLAVES SHH
+
+eval $(ssh-agent -s)
